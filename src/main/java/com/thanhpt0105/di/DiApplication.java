@@ -28,9 +28,9 @@ public class DiApplication {
         SetterInjectedController setterInjectedController = (SetterInjectedController) applicationContext.getBean("setterInjectedController");
         ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) applicationContext.getBean("constructorInjectedController");
 
-        propertyInjectedController.getGreeting();
-        setterInjectedController.getGreeting();
-        constructorInjectedController.getGreeting();
+        System.out.println(propertyInjectedController.getGreeting());
+        System.out.println(setterInjectedController.getGreeting());
+        System.out.println(constructorInjectedController.getGreeting());
     }
 
 }
