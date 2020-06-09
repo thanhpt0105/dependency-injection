@@ -17,8 +17,7 @@ public class DiApplication {
 
         MyController myController = (MyController) applicationContext.getBean("myController");
 
-        String test = myController.testExample();
-        System.out.println("test");
+        System.out.println(myController.getGreeting());
 
 
         //Add annotation @Controller and @Service to the controllers and service so Spring knows them as beans and initiate
