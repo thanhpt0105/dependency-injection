@@ -1,9 +1,6 @@
 package com.thanhpt0105.di;
 
-import com.thanhpt0105.di.controllers.ConstructorInjectedController;
-import com.thanhpt0105.di.controllers.MyController;
-import com.thanhpt0105.di.controllers.PropertyInjectedController;
-import com.thanhpt0105.di.controllers.SetterInjectedController;
+import com.thanhpt0105.di.controllers.*;
 import jdk.nashorn.internal.objects.annotations.Setter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -30,6 +27,9 @@ public class DiApplication {
         System.out.println(propertyInjectedController.getGreeting());
         System.out.println(setterInjectedController.getGreeting());
         System.out.println(constructorInjectedController.getGreeting());
+
+        I18nController i18nController = (I18nController) applicationContext.getBean("i18nController");
+        System.out.println(i18nController.getGreeting());
     }
 
 }
