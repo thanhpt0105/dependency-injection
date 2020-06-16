@@ -4,7 +4,7 @@ import com.thanhpt0105.di.services.GreetingService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
-@Controller
+//@Controller
 public class ConstructorInjectedController {
     GreetingService greetingService;
 

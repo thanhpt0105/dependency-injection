@@ -2,7 +2,7 @@ package com.thanhpt0105.di.services;
 
 import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 public class SetterInjectedGreetingServiceImpl implements GreetingService {
     @Override
     public String sayGreeting() {
