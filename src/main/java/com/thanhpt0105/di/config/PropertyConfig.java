@@ -10,7 +10,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 @Configuration
 @PropertySources({
-        @PropertySource("classpath:datasource.properties")
+        @PropertySource("classpath:datasource.properties") //can have multiple property files declared here
 })
 public class PropertyConfig {
 
